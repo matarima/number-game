@@ -1,0 +1,51 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.game-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-board {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.number {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: lightgrey;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.number.clicked {
+  background-color: red;
+}
+
+.status-message {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.status-message.all-cleared {
+  color: green;
+}
+
+.status-message.game-over {
+  color: red;
+}
